@@ -1,0 +1,23 @@
+# ninja log v5
+318	776	7547564847557313	Z:/Unity Projects/Asteroids/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1t3k2w47/obj/arm64-v8a/libswappywrapper.so	f82ab950cf651573
+10	1620	7547564856517026	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b51f52abe57366a
+32	317	7547564843455780	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	72ddce271969f443
+19	1255	7547564852841101	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	25be9e4619d0af61
+16	1353	7547564853798689	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1d4869935804c96e
+29	1359	7547564853843752	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9bc06974e26029fc
+6	1290	7547564853193467	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	905a545797a457e3
+13	1407	7547564854397587	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	79fe3f2040f7fc77
+22	1291	7547564853193467	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	36e029a4fddb09f4
+25	1513	7547564855444228	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2e70ffc2f70c7825
+1621	1713	7547564857460830	Z:/Unity Projects/Asteroids/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1t3k2w47/obj/arm64-v8a/libgame.so	4970f16daad92b0e
+43	314	7547570946743742	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	72ddce271969f443
+314	562	7547570949169534	Z:/Unity Projects/Asteroids/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1t3k2w47/obj/arm64-v8a/libswappywrapper.so	f82ab950cf651573
+26	1140	7547570955075657	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	25be9e4619d0af61
+8	1151	7547570955191226	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	905a545797a457e3
+35	1161	7547570955304199	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	36e029a4fddb09f4
+19	1235	7547570956032420	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	1d4869935804c96e
+39	1256	7547570956171723	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9bc06974e26029fc
+16	1276	7547570956444133	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	79fe3f2040f7fc77
+22	1402	7547570957694496	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2e70ffc2f70c7825
+12	1474	7547570958442126	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b51f52abe57366a
+1475	1576	7547570959485783	Z:/Unity Projects/Asteroids/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/1t3k2w47/obj/arm64-v8a/libgame.so	4970f16daad92b0e
