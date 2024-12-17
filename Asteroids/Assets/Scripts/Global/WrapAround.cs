@@ -6,7 +6,7 @@ public class WrapAround : MonoBehaviour
     private float _cameraWidth;
     private float _cameraHeight;
 
-    private bool _isInsideCamera = false; // Флаг, который проверяет, был ли объект в зоне камеры
+    private bool _isInsideCamera = false;
 
     private void Awake()
     {
