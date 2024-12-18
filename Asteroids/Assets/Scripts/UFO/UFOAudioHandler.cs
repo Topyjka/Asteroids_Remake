@@ -24,11 +24,11 @@ public class UFOAudioHandler : AudioHandlerBase, IAudioHandler
 
     private void PlayDeadSound() => PlaySound(_audioSource, _bangSound);
 
-    private void HandleVisibilityChange(UFO ufo)
+    private void HandleVisibilityChange(UFO ufo, UFOVisibilityComponent visibilityComponent)
     {
         AudioSource engineSource = ufo.Size > 2 ? _engineSourceBig : _engineSourceSmall;
 
-        if (ufo.IsVisible)
+        if (visibilityComponent.IsVisible)
         {
             StartSound(engineSource);
         }
@@ -48,14 +48,14 @@ public class UFOAudioHandler : AudioHandlerBase, IAudioHandler
     public void SubscribeToEvents()
     {
         UFO.OnDead += PlayDeadSound;
-        UFO.OnVisible += HandleVisibilityChange;
-        UFO.OnShoting += PlayShootSound;
+        UFOVisibilityComponent.OnVisible += HandleVisibilityChange;
+        UFOShootingComponent.OnShoting += PlayShootSound;
     }
 
     public void UnsubscribeFromEvents()
     {
         UFO.OnDead -= PlayDeadSound;
-        UFO.OnVisible -= HandleVisibilityChange;
-        UFO.OnShoting -= PlayShootSound;
+        UFOVisibilityComponent.OnVisible -= HandleVisibilityChange;
+        UFOShootingComponent.OnShoting -= PlayShootSound;
     }
 }

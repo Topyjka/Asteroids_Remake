@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSize: 40
-  _prefab: {fileID: 2051088691796165852, guid: 26055c9935c9c0141941e0a6df625f1c, type: 3}
+  _prefab: {fileID: 3781182732239518857, guid: 26055c9935c9c0141941e0a6df625f1c, type: 3}
 --- !u!4 &120537328
 Transform:
   m_ObjectHideFlags: 0
@@ -5168,7 +5168,7 @@ GameObject:
   - component: {fileID: 1880437756}
   - component: {fileID: 1880437757}
   m_Layer: 0
-  m_Name: BulletPool
+  m_Name: PlayerBulletPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5202,7 +5202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _poolSize: 40
-  _prefab: {fileID: 8977897500213611554, guid: 898939d2b3e2cc943847b019842703cb, type: 3}
+  _prefab: {fileID: 3247758952062322909, guid: 898939d2b3e2cc943847b019842703cb, type: 3}
 --- !u!224 &1927748574 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8135886327475159579, guid: 56fae09712773584fb63896d473a98ee, type: 3}

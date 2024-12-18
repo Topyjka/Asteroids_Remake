@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2014117565617845141}
   - component: {fileID: 870149731155095405}
   - component: {fileID: 9059119215916968660}
-  - component: {fileID: 2051088691796165852}
+  - component: {fileID: 3781182732239518857}
   m_Layer: 8
   m_Name: BulletEnemy
   m_TagString: Untagged
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2051088691796165852
+--- !u!114 &3781182732239518857
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8565028248958202179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6e8002fede5c04dae6d58ae20cc9da, type: 3}
+  m_Script: {fileID: 11500000, guid: 84b4c755a6480714f92ad822caca0919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 500

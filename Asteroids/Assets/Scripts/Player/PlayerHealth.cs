@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : DamageableObject
 {
     [SerializeField] private int _totalLives = 3;
     [SerializeField] private Image[] _lifeIcons;
@@ -29,31 +29,6 @@ public class PlayerHealth : MonoBehaviour
         UpdateLifeUI();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
-        {
-            TakeDamage();
-        }
-    }
-
-    public void TakeDamage()
-    {
-        if (_isInvulnerable) return;
-
-        _currentLives--;
-        UpdateLifeUI();
-
-        if (_currentLives <= 0)
-        {
-            Die(true);
-        }
-        else
-        {
-            Die(false);
-        }
-    }
-
     private void UpdateLifeUI()
     {
         for (int i = 0; i < _lifeIcons.Length; i++)
@@ -64,7 +39,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die(bool isLivesDepleted)
     {
-        OnDead?.Invoke();
 
         if (_explosionEffect != null)
         {
@@ -79,6 +53,8 @@ public class PlayerHealth : MonoBehaviour
         {
             Respawn();
         }
+
+        OnDead?.Invoke();
     }
 
     private void Respawn()
@@ -116,5 +92,21 @@ public class PlayerHealth : MonoBehaviour
         _spriteRenderer.color = originalColor;
         _collider.enabled = true;
         _isInvulnerable = false;
+    }
+
+    public override void TakeDamage(IAttacker attacker)
+    {
+        if (attacker.DamageType != DamageType.Asteroid &&
+            attacker.DamageType != DamageType.UFO &&
+            attacker.DamageType != DamageType.UFOBullet)
+            return;
+
+        if (_isInvulnerable)
+            return;
+
+        _currentLives--;
+        UpdateLifeUI();
+
+        Die(_currentLives <= 0);
     }
 }

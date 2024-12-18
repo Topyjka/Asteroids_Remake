@@ -1,5 +1,3 @@
 using UnityEngine;
 
-public class UFOPool : ObjectPool<UFO>
-{
-}
+public class UFOPool : ObjectPool<UFO> { }

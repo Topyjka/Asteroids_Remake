@@ -58,21 +58,22 @@ public class UFOSpawner : MonoBehaviour
         }
     }
 
-
-    private void ReturnUfo(UFO ufo)
+    private void ReturnUfo(UFO ufo, UFOVisibilityComponent visibilityComponent)
     {
-        if (ufo.IsVisible == false)
-            _ufoPool.ReturnObject(ufo);
+        if (visibilityComponent.IsVisible != false)
+            return;
+
+        _ufoPool.ReturnObject(ufo);
         _ufoOnDisplay--;
     }
 
     private void OnEnable()
     {
-        UFO.OnVisible += ReturnUfo;
+        UFOVisibilityComponent.OnVisible += ReturnUfo;
     }
 
     private void OnDisable()
     {
-        UFO.OnVisible -= ReturnUfo;
+        UFOVisibilityComponent.OnVisible -= ReturnUfo;
     }
 }

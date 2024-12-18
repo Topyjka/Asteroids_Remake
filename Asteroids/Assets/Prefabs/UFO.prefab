@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 8009106417656415764}
   - component: {fileID: 6596027104249184212}
   - component: {fileID: 4261436422915012606}
+  - component: {fileID: -5193671737142571086}
+  - component: {fileID: 3670439860218664973}
+  - component: {fileID: 4740345232401942213}
   - component: {fileID: -5052110572513441337}
   m_Layer: 8
   m_Name: UFO
@@ -101,11 +104,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf65507a42db31944b8426d380001e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
-  _randomMovementIntensity: 2
+  _movement: {fileID: 0}
+  _shooting: {fileID: 0}
+  _visibility: {fileID: 0}
+--- !u!114 &-5193671737142571086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064991480567281247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df995238d9a8294586366af0978a875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosionEffect: {fileID: 217911786486461971, guid: 2ca6347bdf6bf314aa35a214af80d93c, type: 3}
+--- !u!114 &3670439860218664973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064991480567281247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f169ef6ade7b4498fd621c8a9fa85b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _timeBetweenShots: 2
   _bulletPrefab: {fileID: 8565028248958202179, guid: 26055c9935c9c0141941e0a6df625f1c, type: 3}
-  _explosionEffect: {fileID: 217911786486461971, guid: 2ca6347bdf6bf314aa35a214af80d93c, type: 3}
+--- !u!114 &4740345232401942213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064991480567281247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c0f09bfea28ed458d64b1b59364a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 5
   _verticalBoundaryPadding: 0.1
 --- !u!61 &-5052110572513441337
 BoxCollider2D:
